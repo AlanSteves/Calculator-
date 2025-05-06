@@ -1,0 +1,145 @@
+body {
+   
+    font-family: 'Courier New', Courier, monospace;
+    background-image: url('bg1.png');
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+
+  }
+
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Add this */
+    background-image: url('div1.png');
+    padding: 20px 30px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    box-shadow: 4px 4px 0px #000;
+    width: 100%; /* Updated from fit-content */
+    max-width: 360px; /* Or adjust based on your design */
+    margin: 30px auto; /* Centered */
+  }
+  
+
+  .brand {
+    font-size: 50px;
+    font-weight: bold;
+    color: #222;
+    margin-right: 30px;
+  }
+
+ 
+
+  .login-button {
+    background-color: #eee;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 8px 16px;
+    font-weight: bold;
+    font-size: 30px;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 3px 3px 0px #000;
+  }
+
+  .login-button:hover {
+    background-color: #e0e0e0;
+  }
+  .calculator {
+    margin-top: 50px;
+    background-image: url('div1.png');
+    padding: 20px;
+    border: 3px solid #000;
+    border-radius: 15px;
+    width: fit-content;
+    box-shadow: 6px 6px 0px #000;
+  }
+  
+  #display {
+    background-color: #000;
+    color: whitesmoke;
+    font-weight: bold;
+    width: 300px;
+    height: 50px;
+    font-size: 50px;
+    text-align: right;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 20px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .buttons {
+    
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 60px);
+    gap: 25px;
+  }
+  
+  button {
+    height: 50px;
+    font-size: 20px;
+    border: 2px solid #000;
+    border-radius: 10px;
+    background-color: #eee;
+    cursor: pointer;
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: 3px 3px 0px #000;
+  }
+  
+  button:hover {
+    background-color: #ddd;
+  }
+  
+  .equal {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+  }
+  
+  .equal:hover {
+    background-color: #45a049;
+  }
+  
+  .error {
+    color: red;
+    font-size: 16px;
+    margin-top: 10px;
+    min-height: 20px;
+  }
+  button:active {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 0px #000;
+    transition: transform 0.05s ease;
+  }
+  button {
+    transition: all 0.1s ease-in-out;
+  }
+  .pressed {
+    transform: scale(0.95);
+    box-shadow: 1px 1px 0px #000;
+  }
+      
+  @media (max-width: 600px) {
+    .navbar {
+      padding: 10px 15px;
+      max-width: 300px;
+    }
+  
+    .brand {
+      font-size: 32px;
+    }
+  
+    .login-button {
+      font-size: 24px;
+      padding: 6px 12px;
+    }
+  }
+  
+  
+  
