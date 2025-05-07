@@ -139,6 +139,56 @@ body {
       font-size: 24px;
       padding: 6px 12px;
     }
+    .calculator {
+      margin: 20px auto;
+      padding: 9px;
+      border-width: 1.5px;
+      border-radius: 10px;
+      box-shadow: 3px 3px 0px #000;
+    }
+    #clear-btn {
+      background-color: rgb(255, 67, 67);
+      color: white; 
+    }
+    #delete-btn {
+      background-color: rgb(247, 179, 54);
+      color: white; 
+    }
+    #opp-btn {
+      background-color: rgb(87, 87, 223);
+      color: white; 
+    }
+    #other-btn {
+      background-color: rgb(196, 196, 196);
+      color: rgb(0, 0, 0); 
+    }
+
+    #login-btn {
+      background: linear-gradient(270deg, #00c6ff, #0072ff, #00c6ff);
+      background-size: 600% 600%;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-size: 18px;
+      cursor: pointer;
+      animation: moveGradient 5s ease infinite;
+    }
+    
+    /* Keyframes for moving gradient */
+    @keyframes moveGradient {
+      0% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+      100% {
+        background-position: 0% 50%;
+      }
+    }
+    
+    
   }
   
   

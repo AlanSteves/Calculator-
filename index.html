@@ -12,36 +12,39 @@
   <center>
     <div class="navbar">
       <div class="brand">Calculator</div>
-      <button class="login-button">G</button>
+      <button id="login-btn" class="login-button">G</button>
+
     </div>
 
     <div class="calculator">
       <input type="text" id="display" disabled value="0" />
       <div class="buttons">
-        <button onclick="appendValue('(')">(</button>
-        <button onclick="appendValue(')')">)</button>
-        <button onclick="clearDisplay()">C</button>
-        <button onclick="deleteLast()">⌫</button>
+        <button id="other-btn" onclick="appendValue('(')">(</button>
+        <button id="other-btn" onclick="appendValue(')')">)</button>
+        <button id="clear-btn" onclick="clearDisplay()">C</button>
+        <button id="delete-btn" onclick="deleteLast()">⌫</button>
+
 
         <button onclick="appendValue('7')">7</button>
         <button onclick="appendValue('8')">8</button>
         <button onclick="appendValue('9')">9</button>
-        <button onclick="appendValue('/')">÷</button>
+        <button id="opp-btn" onclick="appendValue('/')">÷</button>
 
         <button onclick="appendValue('4')">4</button>
         <button onclick="appendValue('5')">5</button>
         <button onclick="appendValue('6')">6</button>
-        <button onclick="appendValue('*')">×</button>
+        <button id="opp-btn" onclick="appendValue('*')">×</button>
 
         <button onclick="appendValue('1')">1</button>
         <button onclick="appendValue('2')">2</button>
         <button onclick="appendValue('3')">3</button>
-        <button onclick="appendValue('-')">−</button>
+        <button id="opp-btn" onclick="appendValue('-')">−</button>
 
+        
+        <button id="other-btn" onclick="appendValue('.')">.</button>
         <button onclick="appendValue('0')">0</button>
-        <button onclick="appendValue('.')">.</button>
-        <button onclick="appendValue('%')">%</button>
-        <button onclick="appendValue('+')">+</button>
+        <button id="other-btn" onclick="appendValue('%')">%</button>
+        <button id="opp-btn" onclick="appendValue('+')">+</button>
 
         <button class="equal" onclick="calculate()" style="grid-column: span 4 ">=</button>
       </div>
